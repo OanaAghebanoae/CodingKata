@@ -1,0 +1,7 @@
+D:\Proj\CodingKatas\CodingKata\CodingKata\bin\Debug\CodingKata.exe.config
+D:\Proj\CodingKatas\CodingKata\CodingKata\bin\Debug\CodingKata.exe
+D:\Proj\CodingKatas\CodingKata\CodingKata\bin\Debug\CodingKata.pdb
+D:\Proj\CodingKatas\CodingKata\CodingKata\obj\Debug\CodingKata.csprojAssemblyReference.cache
+D:\Proj\CodingKatas\CodingKata\CodingKata\obj\Debug\CodingKata.csproj.CoreCompileInputs.cache
+D:\Proj\CodingKatas\CodingKata\CodingKata\obj\Debug\CodingKata.exe
+D:\Proj\CodingKatas\CodingKata\CodingKata\obj\Debug\CodingKata.pdb
