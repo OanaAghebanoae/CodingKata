@@ -11,7 +11,7 @@ namespace CodingKata
         static void Main(string[] args)
         {
             Anagrams anagrams = new Anagrams();
-            anagrams.FindAnagrams();
+            anagrams.FindAnagrams(@"../../Resources/anagrams.txt");
         }
     }
 }
