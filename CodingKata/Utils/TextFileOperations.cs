@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CodingKata.Utils
 {
@@ -25,13 +22,33 @@ namespace CodingKata.Utils
             return lines;
         }
 
-        public static void WriteToFile(IEnumerable<string> lines, string filePath)
+        public static void WriteToFile(Dictionary<string, List<string>> lines, string filePath)
         {
             try
             {
-                System.IO.File.WriteAllLines(filePath, lines);
+                StreamWriter sw = new StreamWriter(filePath);
+                if (!File.Exists(filePath))
+                {
+                    sw = File.CreateText(filePath);
+                }
+
+                using (sw)
+                {
+                    foreach (var word in lines)
+                    {
+                        if (word.Value.Count > 1)
+                        {
+                            foreach (var w in word.Value)
+                            {
+                                sw.Write(w + " ");
+                            }
+
+                            sw.WriteLine();
+                        }
+                    }
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }

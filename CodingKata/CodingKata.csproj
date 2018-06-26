@@ -51,7 +51,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\anagrams.txt" />
+    <Content Include="Resources\anagramsResult.txt" />
+    <Content Include="Resources\anagramsSource.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
